@@ -37,21 +37,21 @@ export const FEEDS: Record<NewsCategory, FeedSource[]> = {
 			name: 'CISA Known Exploited Vulnerabilities',
 			url: 'https://www.cisa.gov/feeds/known-exploited-vulnerabilities-catalog.xml'
 		},
-		{ name: 'MSRC Security Updates', url: 'https://msrc.microsoft.com/update-guide/rss' },
-		{ name: 'SANS ISC Diary', url: 'https://isc.sans.edu/rssfeed.xml' },
-		{ name: 'BleepingComputer', url: 'https://www.bleepingcomputer.com/feed/' },
-		{ name: 'The Register Security', url: 'https://www.theregister.com/security/headlines.atom' }
+		{ name: 'CVEFeed Cyber News', url: 'https://cvefeed.io/rssfeed/newsroom.xml' },
+		{ name: 'MSRC Security Updates', url: 'https://msrc.microsoft.com/update-guide/rss' }
 	],
 	sysadmin: [
 		{ name: 'Kubernetes Blog', url: 'https://kubernetes.io/feed.xml' },
 		{ name: 'CNCF Blog', url: 'https://www.cncf.io/feed/' },
 		{ name: 'HashiCorp Blog', url: 'https://www.hashicorp.com/blog/feed.xml' },
 		{ name: 'Docker Blog', url: 'https://www.docker.com/blog/feed/' },
-		{ name: 'CVEFeed Cyber News', url: 'https://cvefeed.io/rssfeed/newsroom.xml' },
 		{ name: 'AWS What\'s New', url: 'https://aws.amazon.com/about-aws/whats-new/recent/feed/' },
 		{ name: 'Azure Updates', url: 'https://azurecomcdn.azureedge.net/en-us/updates/feed/' },
 		{ name: 'Google Cloud Blog', url: 'https://cloudblog.withgoogle.com/rss/' },
-		{ name: 'LWN Headlines', url: 'https://lwn.net/headlines/rss' }
+		{ name: 'LWN Headlines', url: 'https://lwn.net/headlines/rss' },
+		{ name: 'The Register Security', url: 'https://www.theregister.com/security/headlines.atom' },
+		{ name: 'SANS ISC Diary', url: 'https://isc.sans.edu/rssfeed.xml' },
+		{ name: 'BleepingComputer', url: 'https://www.bleepingcomputer.com/feed/' }
 	],
 	local: [],
 	finance: [
