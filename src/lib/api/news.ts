@@ -10,7 +10,7 @@ import {
 	detectTopics,
 	SYSADMIN_KEYWORDS
 } from '$lib/config/keywords';
-import { fetchWithProxy, API_DELAYS, logger } from '$lib/config/api';
+import { fetchWithProxy, API_DELAYS, logger, CORS_PROXY_URL } from '$lib/config/api';
 
 /**
  * Simple hash function to generate unique IDs from URLs
@@ -298,11 +298,12 @@ export async function fetchLocalNews(filter: LocalNewsFilter): Promise<NewsItem[
 
 	const fullQuery = `${locationQuery} sourcelang:english`;
 	const gdeltUrl = `https://api.gdeltproject.org/api/v2/doc/doc?query=${fullQuery}&timespan=7d&mode=artlist&maxrecords=20&format=json&sort=date`;
+	const fallbackUrl = `${CORS_PROXY_URL}${encodeURIComponent(gdeltUrl)}`;
 
 	try {
 		logger.log('News API', `Fetching local news for ${city} ${state}`.trim());
 
-		const response = await fetchWithProxy(gdeltUrl);
+		const response = await fetch(fallbackUrl);
 		if (!response.ok) {
 			throw new Error(`HTTP ${response.status}: ${response.statusText}`);
 		}

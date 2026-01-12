@@ -31,7 +31,8 @@ export const FEEDS: Record<NewsCategory, FeedSource[]> = {
 		{ name: 'OpenAI Blog', url: 'https://openai.com/news/rss.xml' }
 	],
 	security: [
-		{ name: 'NVD CVE Feed', url: 'https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml' },
+		{ name: 'CVEFeed Latest', url: 'https://cvefeed.io/rssfeed/latest.xml' },
+		{ name: 'CVEFeed High Severity', url: 'https://cvefeed.io/rssfeed/severity/high.xml' },
 		{
 			name: 'CISA Known Exploited Vulnerabilities',
 			url: 'https://www.cisa.gov/feeds/known-exploited-vulnerabilities-catalog.xml'
@@ -46,6 +47,7 @@ export const FEEDS: Record<NewsCategory, FeedSource[]> = {
 		{ name: 'CNCF Blog', url: 'https://www.cncf.io/feed/' },
 		{ name: 'HashiCorp Blog', url: 'https://www.hashicorp.com/blog/feed.xml' },
 		{ name: 'Docker Blog', url: 'https://www.docker.com/blog/feed/' },
+		{ name: 'CVEFeed Cyber News', url: 'https://cvefeed.io/rssfeed/newsroom.xml' },
 		{ name: 'AWS What\'s New', url: 'https://aws.amazon.com/about-aws/whats-new/recent/feed/' },
 		{ name: 'Azure Updates', url: 'https://azurecomcdn.azureedge.net/en-us/updates/feed/' },
 		{ name: 'Google Cloud Blog', url: 'https://cloudblog.withgoogle.com/rss/' },
