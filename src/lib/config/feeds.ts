@@ -51,7 +51,8 @@ export const FEEDS: Record<NewsCategory, FeedSource[]> = {
 		{ name: 'LWN Headlines', url: 'https://lwn.net/headlines/rss' },
 		{ name: 'The Register Security', url: 'https://www.theregister.com/security/headlines.atom' },
 		{ name: 'SANS ISC Diary', url: 'https://isc.sans.edu/rssfeed.xml' },
-		{ name: 'BleepingComputer', url: 'https://www.bleepingcomputer.com/feed/' }
+		{ name: 'BleepingComputer', url: 'https://www.bleepingcomputer.com/feed/' },
+		{ name: 'Self Hosted Weekly', url: 'https://selfh.st/rss/' }
 	],
 	local: [],
 	finance: [
